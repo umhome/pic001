@@ -2,329 +2,190 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
+            margin: 0;
             min-height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-image: url(https://plan-use-card.xofulitu-001.com/upload/art/20240109/cc4580712437dfc05b1ab.jpg);
-			background-size: 100%;
-			auto;background-attachment: fixed;
+            background: 
+                radial-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+                #1a1a1a;
+            background-size: 20px 20px;
+            gap: 40px;
+        }
+
+        .box {
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
             padding: 20px;
         }
 
-        .main-box {
-            padding: 15px;;
-            max-width: 90vw;
-            width: auto;
-            height: auto;
-        }
-
-        .cards-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px;
-            justify-content: flex-start;
-        }
-
-        .card {
-            width: 190px;
-            flex-shrink: 0;
-            border-radius: 6px;
-            overflow: hidden;
-            transition: transform 0.2s ease;
-			background: rgba(0,0,0,0.3)
-        }
-
-        .image-wrapper {
+        /* 第五个Box */
+        .img-container {
             position: relative;
-            width: 100%;
-            padding-top: calc(100% / 1.488); /* 1.488:1比例计算 */
-            background: #f8f9fa;
+            display: inline-block;
+            margin: 0px;
         }
-
-        .card-image {
+        .img-container img {
+            height: 200px;
+            border-radius: 8px;
+        }
+        .overlay-text {
+            display: none;
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
         }
-
-        .content {
-            padding: 12px;
-            min-height: 80px;
-        }
-
-        .content p {
-            margin: 0;
-            line-height: 1.4;
-            word-break: break-word;
-        }
-
-        .content p:first-child {
-            font-weight: 600;
-            color: #FFFFFF;
-            font-size: 14px;
-            margin-bottom: 6px;
-        }
-
-        .content p:last-child {
-            color: #CBCBCB;
-            font-size: 12px;
-        }
-
-        @media (max-width: 768px) {
-            .main-box {
-                width: 95vw;
-                padding: 10px;
-            }
-
-            .cards-container {
-                justify-content: center;
-            }
+        .img-container:hover .overlay-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     </style>
 </head>
 <body>
-    <div class="main-box">
-        <div class="cards-container"></div>
+    <!-- 第五个Box -->
+    <div class="box box5">
+        <div class="img-container">
+            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/ipx934/ipx934pl.jpg">
+            <div class="overlay-text">IPX934</div>
+        </div>
+        <div class="img-container">
+            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/ipzz178/ipzz178pl.jpg">
+            <div class="overlay-text">IPZZ178</div>
+        </div>
+		<div class="img-container">
+            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/tkipzz293/tkipzz293pl.jpg">
+            <div class="overlay-text">IPZZ293</div>
+        </div>
+		<div class="img-container">
+            <img src="https://imagebf2d5647.dalicdn.com/censored/thumb/2020/SSNI/677/thumb.jpg">
+            <div class="overlay-text">SSNI677</div>
+        </div>
+		<div class="img-container">
+            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/ssis667bod/ssis667bodpl.jpg">
+            <div class="overlay-text">SSIS667</div>
+        </div>
+		<div class="img-container">
+            <img src="https://xfhaoku.com/upload/vod/20230723-1/3d429182ec789e13c4f7ed02adad38ca.jpg">
+            <div class="overlay-text">Tokyo-Hot n0646</div>
+        </div>
+		<div class="img-container">
+            <img src="https://xfhaoku.com/upload/vod/20250321-1/bf0a286a24348fff0ea6ccb3a6cf88cb.jpg">
+            <div class="overlay-text">SSNI192</div>
+        </div>
+		<div class="img-container">
+            <img src="https://xfhaoku.com/upload/vod/20230120-1/819881f8d423c528c1867015a7eecf2a.jpg">
+            <div class="overlay-text">SDJS158</div>
+        </div>
+		<div class="img-container">
+            <img src="https://xfhaoku.com/upload/vod/20250318-1/ada4847d29ef9a17076038d605214e53.jpg">
+            <div class="overlay-text">SSNI514</div>
+        </div>
+		<div class="img-container">
+            <img src="https://xfhaoku.com/upload/vod/20250112-2/e1d0c84d318cce93cc6fde9276770b1e.jpg">
+            <div class="overlay-text">IPX372</div>
+        </div>
+		<div class="img-container">
+            <img src="https://imagebf2d5647.dalicdn.com/censored/thumb/2022/SSIS/529/thumb.jpg">
+            <div class="overlay-text">SSIS529</div>
+        </div>
+		<div class="img-container">
+            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/k9ssis440/k9ssis440pl.jpg">
+            <div class="overlay-text">SSIS440</div>
+        </div>
+		<div class="img-container">
+            <img src="https://xfhaoku.com/upload/vod/20230927-1/8f803e8e624919698099e734a29263c9.jpg">
+            <div class="overlay-text">SSIS136</div>
+        </div>
+		<div class="img-container">
+            <img src="https://imagebf2d5647.dalicdn.com/censored/thumb/2022/BACJ/005/thumb.jpg">
+            <div class="overlay-text">BACJ005</div>
+        </div>
+		<div class="img-container">
+            <img src="https://xfhaoku.com/upload/vod/20221025-15/138a9a9a243ae7c99f52ffc9daae7f44.jpg">
+            <div class="overlay-text">CAWD259</div>
+        </div>
+		<div class="img-container">
+            <img src="https://imagebf2d5647.dalicdn.com/censored/thumb/2019/HODV/21402/thumb.jpg">
+            <div class="overlay-text">HODV21402</div>
+        </div>
+		<div class="img-container">
+            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/9ssis560/9ssis560pl.jpg">
+            <div class="overlay-text">SSIS560</div>
+        </div>
+		<div class="img-container">
+            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/tkipzz050/tkipzz050pl.jpg">
+            <div class="overlay-text">IPZZ050</div>
+        </div>
+		<div class="img-container">
+            <img src="https://imagebf2d5647.dalicdn.com/censored/thumb/2020/MILK/098/thumb.jpg">
+            <div class="overlay-text">MILK098</div>
+        </div>
+		<div class="img-container">
+            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/9pred721/9pred721pl.jpg">
+            <div class="overlay-text">PRED721</div>
+        </div>
+		<div class="img-container">
+            <img src="https://www.sharkwowonline.com/uploads/banners/START-223.jpg">
+            <div class="overlay-text">START223</div>
+        </div>
+		<div class="img-container">
+            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/h_254cand049/h_254cand049pl.jpg">
+            <div class="overlay-text">CAND049</div>
+        </div>
+		<div class="img-container">
+            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/1fsdss828/1fsdss828pl.jpg">
+            <div class="overlay-text">FSDSS828</div>
+        </div>
+		<div class="img-container">
+            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/hsoda029/hsoda029pl.jpg">
+            <div class="overlay-text">HSODA029</div>
+        </div>
+		<div class="img-container">
+            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/ipx283/ipx283pl.jpg">
+            <div class="overlay-text">IPX283</div>
+        </div>
+		<div class="img-container">
+            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/ipzz099/ipzz099pl.jpg">
+            <div class="overlay-text">IPZZ099</div>
+        </div>
+		<div class="img-container">
+            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/h_1712kbr006/h_1712kbr006pl.jpg">
+            <div class="overlay-text">KBR006</div>
+        </div>
+		<div class="img-container">
+            <img src="https://spic.hotoss.com/dmm/digital/video/mdbk00331/mdbk00331pl.jpg">
+            <div class="overlay-text">MDBK331</div>
+        </div>
+		<div class="img-container">
+            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/midd994/midd994pl.jpg">
+            <div class="overlay-text">MIDD994</div>
+        </div>
+		<div class="img-container">
+            <img src="https://imagebf2d5647.dalicdn.com/censored/thumb/2019/MYAB/005/thumb.jpg">
+            <div class="overlay-text">MYAB005</div>
+        </div>
+		<div class="img-container">
+            <img src="https://spic.hotoss.com/dmm/mono/movie/adult/royd177/royd177pl.jpg">
+            <div class="overlay-text">ROYD177</div>
+        </div>
+		<div class="img-container">
+            <img src="https://xfhaoku.com/upload/vod/20241118-1/7bc3325501e7dd735adf32c088248dfa.jpg">
+            <div class="overlay-text">KBI027</div>
+        </div>
     </div>
-
-    <script>
-        // 卡片数据配置
-        const cardsData = [
-            {
-                image: 'https://spic.hotoss.com/dmm/mono/movie/adult/ipx934/ipx934pl.jpg',
-                title: 'IPX934',
-                desc: '「今日だけは奥さんのことを忘れて…」 一年ぶりに再会した愛人と1秒たりとも惜しまずヤリたい放題した出張先の休日 桃乃木かな'
-            },
-		{
-                image: 'https://spic.hotoss.com/dmm/mono/movie/adult/ipzz178/ipzz178pl.jpg',
-                title: 'IPZZ178',
-                desc: '婚前同窓会NTR 性格最悪セックス最高なクズ元カレの絶倫ピストンに再び堕ちてしまったボクの婚約者 桃乃木かな'
-            },
-			{
-                image: 'https://spic.hotoss.com/dmm/mono/movie/adult/tkipzz293/tkipzz293pl.jpg',
-                title: 'IPZZ293',
-                desc: '【数量限定】スク水マニア ザーメンマーキング 桃乃木かな 生写真3枚付き'
-            },
-			{
-                image: 'https://imagebf2d5647.dalicdn.com/censored/thumb/2020/SSNI/677/thumb.jpg',
-                title: 'SSNI677',
-                desc: '可愛いからっていい気になってるありなに嫉妬した私は男友達たちに頼んで何度も復讐代行レ×プしてもらった。 橋本ありな'
-            },
-			{
-                image: 'https://spic.hotoss.com/dmm/mono/movie/adult/ssis667bod/ssis667bodpl.jpg',
-                title: 'SSIS667',
-                desc: '滴る汁、痙攣する敏感ボディが超鮮明4K撮影 イッても抜かない絶撃ピストン 汗・潮・涎 失神寸前の過去最高ガチアクメ 七ツ森りり'
-            },
-			{
-                image: 'https://xfhaoku.com/upload/vod/20230723-1/3d429182ec789e13c4f7ed02adad38ca.jpg',
-                title: 'Tokyo-Hot n0646',
-                desc: '一ノ瀬アメリ東熱ガチ汁姦 × N0646 【東京熱】中文 / 一ノ瀬アメリ東熱ガチ汁姦'
-            },
-		        {
-                image: 'https://image_vj.dalicdn.com/uncensored/1pondo/081811_158/thumb.jpg',
-                title: '081811_158',
-                desc: '最佳情色混血女優 一ノ瀬アメリ'
-            },
-			
-		        {
-                image: 'https://xfhaoku.com/upload/vod/20250321-1/bf0a286a24348fff0ea6ccb3a6cf88cb.jpg',
-                title: 'SSNI192',
-                desc: '【ベストヒッツ】デビュー10周年企画 明日花キララの潜在エロスを120％ひき出す媚薬漬け性獣セックス4本番【アウトレット】'
-            },
-		        {
-                image: 'https://xfhaoku.com/upload/vod/20230120-1/819881f8d423c528c1867015a7eecf2a.jpg',
-                title: 'SDJS158',
-                desc: '宮崎リンが業務命令で廃業寸前の風俗店をプロデュース！オナクラ・メンズエステ・ヘルス！真夏の御奉仕セックス3本番！'
-            },
-		        {
-                image: 'https://xfhaoku.com/upload/vod/20250318-1/ada4847d29ef9a17076038d605214e53.jpg',
-                title: 'SSNI514',
-                desc: '泉百合初・絶・顶！真实高潮性感开发3本番特别编'
-            },
-		        {
-                image: 'https://xfhaoku.com/upload/vod/20250112-2/e1d0c84d318cce93cc6fde9276770b1e.jpg',
-                title: 'IPX372',
-                desc: '中年おじさんと見つめ絡み感じ合う欲望セックス4本番SP ねっとり舌を絡ませひたすらお互いを求める濃密性交 相沢みなみ'
-            },
-			{
-                image: 'https://imagebf2d5647.dalicdn.com/censored/thumb/2022/SSIS/529/thumb.jpg',
-                title: 'SSIS529',
-                desc: 'アナタの五感を刺激する鷲尾めいのシコシコサポートラグジュアリー肉感エロスで脳を満たす完全主観、Jカップ密着、ASMR淫語スペシャル （ブルーレイディスク） （BOD）'
-            },
-			{
-                image: 'https://spic.hotoss.com/dmm/mono/movie/adult/k9ssis440/k9ssis440pl.jpg',
-                title: 'SSIS440',
-                desc: '4K撮影映像 完全主観オナニーサポート 河北彩花'
-            },
-			{
-                image: 'https://xfhaoku.com/upload/vod/20230927-1/8f803e8e624919698099e734a29263c9.jpg',
-                title: 'SSIS136',
-                desc: 'アナタの五感を刺激する安齋ららのシコシコサポートラグジュアリー Jcupのエロスで脳を満たすASMR主観、神の乳スペシャル'
-            },
-			{
-                image: 'https://imagebf2d5647.dalicdn.com/censored/thumb/2022/BACJ/005/thumb.jpg',
-                title: 'BACJ005',
-                desc: '完全主観NTR 寝取られ見せつけが大好きな性癖が歪んだ彼女との悪夢勃起が止まらない日常 南乃そら'
-            },
-			{
-                image: 'https://xfhaoku.com/upload/vod/20221025-15/138a9a9a243ae7c99f52ffc9daae7f44.jpg',
-                title: 'CAWD259',
-                desc: '【没入感MAX！完全主観＆バイノーラル録音】彼女の親友がバレたら絶体絶命な状況で中出しおねだり囁き誘惑 伊藤舞雪'
-            },
-			{
-                image: 'https://imagebf2d5647.dalicdn.com/censored/thumb/2019/HODV/21402/thumb.jpg',
-                title: 'HODV21402',
-                desc: '完全主観 濃密スイートルーム［某大手IT企業コンサルタント］ 霧島レオナ'
-            },
-		        {
-                image: 'https://spic.hotoss.com/dmm/mono/movie/adult/9ssis560/9ssis560pl.jpg',
-                title: 'SSIS560',
-                desc: '「えっ！ここでするんですか？」 河北彩花に一ヶ月密着して隙あらばいきなり即ズボッ！ 前代未聞ドッキリAV大作戦'
-            },
-			{
-                image: 'https://spic.hotoss.com/dmm/mono/movie/adult/tkipzz050/tkipzz050pl.jpg',
-                title: 'IPZZ050',
-                desc: '「もう入れて…」≪アプリでマッチング≫ 出会って即ハメ即交型の都合のイイ絶倫ビッチ沼。 総射精11発！！ 桜空もも'
-            },
-			{
-                image: 'https://imagebf2d5647.dalicdn.com/censored/thumb/2020/MILK/098/thumb.jpg',
-                title: 'MILK098',
-                desc: 'ロリしか勝たん！！完全主観 大好きなお兄ちゃんと過ごすエッチなおうち時間 冬愛ことね'
-            },
-			{
-                image: 'https://storage20000.contents.fc2.com/file/361/36061106/1583741374.36.jpg',
-                title: 'FC2PPV1297737',
-                desc: '超絶カワイイ現役ハーフモデル 女子大生 霧島レオナ'
-            },
-			{
-                image: 'https://spic.hotoss.com/dmm/mono/movie/adult/9pred721/9pred721pl.jpg',
-                title: 'PRED721',
-                desc: '酔うと豹変ドスケベになる地味メガネ巨乳バイト後輩に酒乱ベロキス暴れ騎乗位で一晩中、精子ぶっこ抜かれた僕。 楪カレン （ブルーレイディスク）'
-            },
-			{
-                image: 'https://www.sharkwowonline.com/uploads/banners/START-223.jpg',
-                title: 'START223',
-                desc: '最近付き合った地味だけど隠れ巨乳な彼女と初めてのキャンプデート Tシャツからハミ出した巨乳に火が付いてしまい精子が尽きるまでめちゃくちゃセックスしまくった 彩月七緒'
-            },
-			{
-                image: 'https://spic.hotoss.com/dmm/mono/movie/adult/h_254cand049/h_254cand049pl.jpg',
-                title: 'CAND049',
-                desc: 'ガリ勉な姉貴にスケベなSEXを見せつけよう！'
-            },
-			{
-                image: 'https://spic.hotoss.com/dmm/mono/movie/adult/1fsdss828/1fsdss828pl.jpg',
-                title: 'FSDSS828',
-                desc: '干物ニート喪女になっていた年上幼馴染がはじめての本物チ○ポで覚醒し絶倫セックスに溺れた夏。茉城まみ'
-            },
-			{
-                image: 'https://spic.hotoss.com/dmm/mono/movie/adult/hsoda029/hsoda029pl.jpg',
-                title: 'HSODA029',
-                desc: '突拍子もないことを言いますが、うちに住み着くアラサー喪女ニートがノーブラでふらつくから乳首と目が合ってしょうがないんです。 森日向子'
-            },
-			{
-                image: 'https://spic.hotoss.com/dmm/mono/movie/adult/ipx283/ipx283pl.jpg',
-                title: 'IPX283',
-                desc: '文系痴女と365日SEX三昧の独身寮 希崎ジェシカ'
-            },
-			{
-                image: 'https://spic.hotoss.com/dmm/mono/movie/adult/ipzz099/ipzz099pl.jpg',
-                title: 'IPZZ099',
-                desc: '夏休み、地味なメガネ図書館司書が閉館後汗だくでいつもボクのち○ぽをゆっくり味わうように痴女る。 古川ほのか'
-            },
-			{
-                image: 'https://spic.hotoss.com/dmm/mono/movie/adult/h_1712kbr006/h_1712kbr006pl.jpg',
-                title: 'KBR006',
-                desc: 'NGR ーナガサレー 真面目で推しに弱い眼鏡美人妻が、狡猾な男達にナガサレ…快楽に狂う 中出し5連発 松岡すず'
-            },
-			{
-                image: 'https://spic.hotoss.com/dmm/digital/video/mdbk00331/mdbk00331pl.jpg',
-                title: 'MDBK331',
-                desc: '姉の家の居候ニート女友達が無防備な部屋着でモテないボクをまさかのドすけべオナニー誘惑！！'
-            },
-			{
-                image: 'https://spic.hotoss.com/dmm/mono/movie/adult/midd994/midd994pl.jpg',
-                title: 'MIDD994',
-                desc: 'キャリアOL痴● プライドを汚された高慢な女 JULIA'
-            },
-			{
-                image: 'https://imagebf2d5647.dalicdn.com/censored/thumb/2019/MYAB/005/thumb.jpg',
-                title: 'MYAB005',
-                desc: '高飛車ぷりけつOLに肉体派のガチムチ汗臭宅配業者が勤務先で白目剥くまで無限イカセでエビ反り絶頂びくんびくんっ！ 黒川さりな （DOD）'
-            },
-			{
-                image: 'https://spic.hotoss.com/dmm/mono/movie/adult/royd177/royd177pl.jpg',
-                title: 'ROYD177',
-                desc: 'むっつり文学美少女と5秒目が合えばセックスできるマッチング図書館 藍芽みずき'
-            },
-			{
-                image: 'https://xfhaoku.com/upload/vod/20241118-1/7bc3325501e7dd735adf32c088248dfa.jpg',
-                title: 'KBI027',
-                desc: '中出し解禁3本番！！ 旦那を忘れるほど汗だく汁だくで絡み合う 濃厚接吻【なかだし】性交 新川愛七'
-            },
-            // 添加更多数据...
-        ];
-
-        // 动态生成卡片
-        const container = document.querySelector('.cards-container');
-        
-        cardsData.forEach(data => {
-            const card = document.createElement('div');
-            card.className = 'card';
-            
-            card.innerHTML = `
-                <div class="image-wrapper">
-                    <img 
-                        src="${data.image}" 
-                        class="card-image" 
-                        alt="${data.title}"
-                        loading="lazy"
-                    >
-                </div>
-                <div class="content">
-                    <p>${data.title}</p>
-                    <p>${data.desc}</p>
-                </div>
-            `;
-
-            container.appendChild(card);
-        });
-
-        // 自动居中逻辑
-        function adjustLayout() {
-            const container = document.querySelector('.cards-container');
-            const cards = container.querySelectorAll('.card');
-            const containerWidth = container.offsetWidth;
-            const cardWidth = 220;
-            const gap = 5;
-            
-            // 计算每行可容纳卡片数量
-            const cardsPerRow = Math.floor((containerWidth + gap) / (cardWidth + gap));
-            
-            // 当剩余空间超过卡片宽度的40%时居中显示
-            if (cards.length * (cardWidth + gap) - gap < containerWidth * 0.6) {
-                container.style.justifyContent = 'center';
-            } else {
-                container.style.justifyContent = 'flex-start';
-            }
-        }
-
-        // 初始化及窗口变化时调整
-        window.addEventListener('resize', adjustLayout);
-        adjustLayout();
-    </script>
 </body>
 </html>
